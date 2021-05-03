@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "start": "yarn run build && yarn ./dist/rover.js",
+    "start": "yarn run build && node ./dist .",
     "watch:tsc": "tsc --watch -p ./tsconfig.json",
     "build": "tsc --outDir ./dist"
   },
@@ -15,7 +15,11 @@
     "@babel/preset-env": "^7.14.0",
     "@babel/preset-typescript": "^7.13.0",
     "@types/jest": "^26.0.23",
+    "@types/prompt": "^1.1.0",
     "babel-jest": "^26.6.3",
     "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "prompt": "^1.1.0"
   }
 }
